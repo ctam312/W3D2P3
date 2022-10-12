@@ -22,7 +22,7 @@ fibonacci(10); // 55
 
 
 function fibonacci(n, poop = [0,1]) {
-  Your code here - with default parameters
+  // Your code here - with default parameters
   debugger
   if (poop.length === (n + 1)){
     debugger
