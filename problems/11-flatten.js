@@ -13,7 +13,11 @@ flatten([1, [2, [3]]]); // [1, 2, 3]
 ***********************************************************************/
 
 function flatten(arr) {
-  
+  if (arr.length === 0){
+    return arr
+  }else {
+    arr.
+  }
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
