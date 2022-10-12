@@ -19,10 +19,8 @@ fibonacci(4); // 3
 fibonacci(10); // 55
 ***********************************************************************/
 
-function fibonacci(n) {
-  // Your code here
-}
+function fibonacci(n){
   
+}
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = fibonacci;
-  
