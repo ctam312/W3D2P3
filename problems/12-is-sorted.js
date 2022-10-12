@@ -12,16 +12,25 @@ isSorted([5, 4, 3, 2, 1]); // false
 
 
 function isSorted(arr) {
-  if (arr[arr.length-1] > arr[arr.length-2]){
-    arr.pop()
-    return isSorted(arr)
-
-  } else if (arr.length === 1){
+  if (arr.length === 1){
     return true
-
-  }else if (arr[arr.length-1] < arr[arr.length-2]) {
+  } else if (arr[0] < arr[1]){
+    arr.shift();
+    return isSorted(arr);
+  } else {
     return false
   }
+  //tiana's code (also correct)
+  // if (arr[arr.length-1] > arr[arr.length-2]){
+  //   arr.pop()
+  //   return isSorted(arr)
+
+  // } else if (arr.length === 1){
+  //   return true
+
+  // }else if (arr[arr.length-1] < arr[arr.length-2]) {
+  //   return false
+  // }
 }
 
 console.log(isSorted([1, 2, 3, 4, 5])); // true
