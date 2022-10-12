@@ -33,7 +33,7 @@ function fibonacci(n, poop = [0,1]) {
     return fibonacci(n, poop)
   }
 
-//without default parameters
+//without default parameters -- also david's version
   if (n<=2){
     debugger
     return 1
@@ -45,9 +45,16 @@ function fibonacci(n, poop = [0,1]) {
   debugger
   return num1+num2
   }
+//memoization
+//function fibonacci(n, memo = {})
+ if (memo[n] !== undefined) return memo[n];
+ if (n <= 2) return 1;
+ memo[n] = fibonacci(n-1, memo) + fibonacci(n-2,memo);
+ return memo[n];
 
 }
 
-fibonacci(4)
+
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = fibonacci;

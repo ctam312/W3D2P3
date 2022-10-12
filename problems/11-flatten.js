@@ -12,6 +12,17 @@ flatten([1, 2]); // [1, 2]
 flatten([1, [2, [3]]]); // [1, 2, 3]
 ***********************************************************************/
 
+function flatten(arr) {
+    const res = [];
+    arr.forEach(el => {
+        if (Array.isArray(el)) { //is array checks true false
+            res.push(...flatten(el))
+        } else {
+            res.push(el)
+        }
+    })
+    return res;
+}
 
 flatten([1, [2, [3]]]); // [1, 2, 3]
 
