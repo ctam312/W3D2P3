@@ -22,14 +22,6 @@ fibonacci(10); // 55
 
 
 function fibonacci(n, poop = [0,1]) {
-<<<<<<< HEAD
-  // Your code here
-  if (poop.length === (n + 1)){
-    return poop[n]
-  } else {
-    poop.push((poop[poop.length - 2]) + (poop[poop.length - 1]) )
-    return fibonacci(n, poop)
-=======
   // Your code here - with default parameters
   // debugger
   // if (poop.length === (n + 1)){
@@ -52,7 +44,6 @@ function fibonacci(n, poop = [0,1]) {
   let num2 = fibonacci(n-2)
   debugger
   return num1+num2
->>>>>>> refs/remotes/origin/main
   }
 
 }
