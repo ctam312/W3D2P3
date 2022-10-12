@@ -12,6 +12,14 @@ isSorted([5, 4, 3, 2, 1]); // false
 
 
 function isSorted(arr) {
+  if (arr.length === 1){
+    return true
+  } else if (arr[0] < arr[1]){
+    arr.shift();
+    return isSorted(arr);
+  } else {
+    return false
+  }
   // Your code here
 }
 
