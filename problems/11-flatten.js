@@ -12,18 +12,8 @@ flatten([1, 2]); // [1, 2]
 flatten([1, [2, [3]]]); // [1, 2, 3]
 ***********************************************************************/
 
-<<<<<<< HEAD
-function flatten(arr) {
-  if (arr.length === 0){
-    return arr
-  }else {
-    arr.
-  }
-}
-=======
 
 flatten([1, [2, [3]]]); // [1, 2, 3]
->>>>>>> refs/remotes/origin/main
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = flatten;
