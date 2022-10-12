@@ -9,7 +9,7 @@ previous numbers in the sequence together to form the next one:
 
 We count Fibonacci numbers beginning with the first 1. Take a look at the
 examples below if you're unsure where to start!
-
+//array[]
 Examples:
 
 fibonacci(1); // 1
@@ -19,10 +19,21 @@ fibonacci(4); // 3
 fibonacci(10); // 55
 ***********************************************************************/
 
-function fibonacci(n) {
+
+
+function fibonacci(n, poop = [0,1]) {
   // Your code here
+  debugger
+  if (poop.length === (n + 1)){
+    debugger
+    return poop[n]
+  } else {
+    poop.push((poop[poop.length - 2]) + (poop[poop.length - 1]) )
+    debugger
+    return fibonacci(n, poop)
+  }
 }
-  
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = fibonacci;
   
