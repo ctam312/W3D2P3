@@ -23,13 +23,10 @@ fibonacci(10); // 55
 
 function fibonacci(n, poop = [0,1]) {
   // Your code here
-  debugger
   if (poop.length === (n + 1)){
-    debugger
     return poop[n]
   } else {
     poop.push((poop[poop.length - 2]) + (poop[poop.length - 1]) )
-    debugger
     return fibonacci(n, poop)
   }
 }
