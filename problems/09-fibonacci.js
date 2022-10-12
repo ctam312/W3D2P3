@@ -22,17 +22,32 @@ fibonacci(10); // 55
 
 
 function fibonacci(n, poop = [0,1]) {
-  // Your code here
-  debugger
-  if (poop.length === (n + 1)){
+  // Your code here - with default parameters
+  // debugger
+  // if (poop.length === (n + 1)){
+  //   debugger
+  //   return poop[n]
+  // } else {
+  //   poop.push((poop[poop.length - 2]) + (poop[poop.length - 1]) )
+  //   debugger
+  //   return fibonacci(n, poop)
+  // }
+
+//without default parameters
+  if (n<=2){
     debugger
-    return poop[n]
-  } else {
-    poop.push((poop[poop.length - 2]) + (poop[poop.length - 1]) )
-    debugger
-    return fibonacci(n, poop)
+    return 1
   }
+  else {
+  let num1 = fibonacci(n-1)
+  debugger
+  let num2 = fibonacci(n-2)
+  debugger
+  return num1+num2
+  }
+
 }
 
+fibonacci(4)
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 module.exports = fibonacci;
